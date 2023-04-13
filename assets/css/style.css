@@ -5,6 +5,13 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-image: url("../images/calculator.jpg");
+	margin-top: 20vh;
+  height: 100%;
+  background-position: center;
+}
+
 .calculator {
   width: 45%;
 	height: 65vh;
@@ -18,14 +25,13 @@
 .calculator [type="text"] {
 	width: 35vw;
 	height: 58px;
-	margin: 0 0 30px;
+	margin: 20px 0 30px;
 	border: none;
 	background-color: #241f1fd2;
 	color: #fbedd3;
 	border-radius: 5px;
-	box-shadow: 2px 3px 3px 4px #fbedd3;
+	box-shadow: 2px 3px 3px 4px #88e1de;
 	font-size: 25px;
-
 }
 
 .row {
@@ -34,6 +40,10 @@
 	text-align: center;
 	display: flex;
 	flex-direction: row;
+}
+
+#btn {
+	box-shadow: 10px 5px 10px #f58598;
 }
 
 .calculator [type="button"] {
@@ -50,4 +60,5 @@
 
 #equal {
 	width: 120px;
+	box-shadow: 10px 5px 10px #f58598;
 }
