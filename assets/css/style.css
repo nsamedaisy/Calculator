@@ -36,7 +36,9 @@ body {
   font-size: 40px;
 }
 
-#btn {
+#btn,
+#btn2,
+#btn3 {
   box-shadow: 3px 1px 2px #f58598;
 }
 
