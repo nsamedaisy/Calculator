@@ -1,6 +1,6 @@
 # IPHONE CALCULATOR
 
-## The application can carry out the following:
+## The application can carry out the following
 
 - Additions (+)
 - Subtraction (-)
@@ -8,13 +8,13 @@
 - Division (/)
 - Percent (%)
 
-### This application is aim at:
+### This application is aim at
 
 - Carrying out correct calculations
 - Being very efficient
 - Relieving the user of need to do mental operations and need to rely on paper, so far as possible.
 
-### screenshots of the application within the iphone XR.
+### screenshots of the application within the iphone XR
 
 |                                                      |                                                                |
 | ---------------------------------------------------- | -------------------------------------------------------------- |
