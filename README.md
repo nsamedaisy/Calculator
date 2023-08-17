@@ -8,13 +8,13 @@
 - Division (/)
 - Percent (%)
 
-### This application is aim at
+### This application is aimed at
 
 - Carrying out correct calculations
 - Being very efficient
-- Relieving the user of need to do mental operations and need to rely on paper, so far as possible.
+- Relieving the user of the need to do mental operations and need to rely on paper, so far as possible.
 
-### screenshots of the application within the iphone XR
+### screenshots of the application within the iPhone XR
 
 |                                                      |                                                                |
 | ---------------------------------------------------- | -------------------------------------------------------------- |
@@ -26,3 +26,6 @@
 - CSS
 - HTML
 - JavascriptJS
+
+## Link
+https://nsamedaisy.github.io/Calculator/
