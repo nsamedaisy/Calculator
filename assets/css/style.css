@@ -8,20 +8,35 @@ body {
   background-size: 400% 400%;
   animation: gradientAnimation 5s ease infinite;
 }
-@keyframes gradientAnimation{
-  0%{background-position: 0% 50%;}
-  50%{background-position: 100% 50%;}
-  100%{background-position: 0% 50%;}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .calculator {
   margin-top: 100px;
   width: 320px;
   text-align: center;
-  border: #fff;
+  border: #fff solid 2px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px;
+  /* border-style: outset;
+  outline: 0.4rem outset black; */
 }
 
-.calculator {
+#display {
   margin-top: 60px;
   width: 100%;
   height: 100%;
@@ -33,11 +48,48 @@ body {
   border: none;
   color: #fff;
   outline: none;
-  /* border-style: outset;
-  outline: 0.4rem outset black; */
+
 }
 
-.calculator [type="text"] {
+.buttons button {
+  width: 65px;
+  height: 65px;
+  font-size: 20px;
+  margin: 5px;
+  background-color: #616161;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+}
+
+.buttons button:hover {
+  background-color: #adadad;
+  transition: 0.5s ease-in;
+}
+
+button.zero {
+  width: 140px;
+  border-radius: 12px;
+}
+
+button.symbol {
+  background-color: #aaaaaa;
+  color: black;
+}
+
+button.symbol-right {
+  background-color: #c78100;
+}
+
+button.symbol-right:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s ease-in;
+}
+
+/* .calculator [type="text"] {
   width: 20vw;
   padding: 20px;
   margin-bottom: 30px;
@@ -45,45 +97,4 @@ body {
   background-color: inherit;
   color: #fbedd3;
   font-size: 40px;
-}
-
-#btn1,
-#btn2,
-#btn3 {
-  box-shadow: 3px 1px 2px #f58598;
-}
-
-.calculator [type="button"] {
-  width: 65px;
-  height: 50px;
-  border-radius: 20px;
-  background-color: #242020;
-  color: #fbedd3;
-  font-size: 25px;
-  font-weight: 700;
-  margin: 5px;
-  box-shadow: 3px 1px 3px #fbedd3;
-}
-
-#equal {
-  width: 120px;
-  box-shadow: 5px 1px 5px #f58598;
-}
-
-#btn00 {
-  width: 85px;
-  box-shadow: 2px 3px 3px #88e1de;
-}
-
-@media screen and (min-width: 320px) and (max-width: 500px) {
-  .calculator {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    padding: 220px 1px 5px;
-  }
-
-  .calculator [type="text"] {
-    width: 100%;
-  }
-}
+} */
