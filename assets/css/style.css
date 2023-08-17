@@ -6,10 +6,10 @@
 body {
   background: linear-gradient(45deg, #e5771d, #5a818a, #5b5b8d);
   background-size: 400% 400%;
-  animation: gradientAnimation 5s ease infinite;
+  animation: gradient-animation 5s ease infinite;
 }
 
-@keyframes gradientAnimation {
+@keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
   }
@@ -74,7 +74,7 @@ button.zero {
 }
 
 button.symbol {
-  background-color: #aaaaaa;
+  background-color: #aaa;
   color: black;
 }
 

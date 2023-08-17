@@ -6,6 +6,7 @@
 - Subtraction (-)
 - Multiplication (x)
 - Division (/)
+- Percent (%)
 
 ### This application is aim at:
 
@@ -17,7 +18,7 @@
 
 |                                                      |                                                                |
 | ---------------------------------------------------- | -------------------------------------------------------------- |
-| ![Calculator screenshot](./assets/images/readme.png) | ![Calculator screenshot](./assets/images/readmescreenshot.png) |
+| ![Calculator screenshot](./assets/images/readme.png) | ![Calculator screenshot](./assets/images/readme.png) |
 |                                                      |
 
 ## Tools used
