@@ -1,4 +1,4 @@
-let display = document.getElementById("display");
+const display = document.getElementById("display");
 let equation = "";
 let isOperatorClicked = false;
 
@@ -14,13 +14,13 @@ function appendOperator(operator) {
 }
 
 function clearDisplay() {
-  equation = ""
-  display.value = ""
+  equation = "";
+  display.value = "";
 }
 
 function deleteLastCharacter() {
-  equation = equation.slice(0, -1)
-  display.value = equation
+  equation = equation.slice(0, -1);
+  display.value = equation;
 }
 
 function CalculateResult() {
