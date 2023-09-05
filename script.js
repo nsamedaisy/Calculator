@@ -2,7 +2,7 @@ const display = document.getElementById('display')
 let equation = ''
 let lastInputWasOperator = false
 
-const appendValue = function (value) {
+function appendValue (value) {
   equation += value
   display.value = equation
   lastInputWasOperator = false
