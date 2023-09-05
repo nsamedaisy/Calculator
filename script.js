@@ -2,7 +2,7 @@ const display = document.getElementById('display')
 let equation = ''
 let lastInputWasOperator = false
 
-function appendValue (value) {
+const appendValue = function (value) {
   equation += value
   display.value = equation
   lastInputWasOperator = false
@@ -22,17 +22,17 @@ function clearDisplay () {
   lastInputWasOperator = false
 }
 
-function deleteLastCharacter () {
+function deleteLastCharacter () { 
   equation = equation.slice(0, -1)
   display.value = equation
-  lastInputWasOperator = (equation.slice(-1) in {'+': true, '-': true, '*': true, '/': true})
+  lastInputWasOperator = (equation.slice(-1) in {'+': true, '-': true, '*': true, '/': true}) 
 }
 
 function calculateResult () {
   try {
     equation = equation.replace(/%/g, '*0.01')
     const result = eval(equation)
-    equation = result.toString ()
+    equation = result.toString()
     display.value = equation
     lastInputWasOperator = false
   } catch (err) {
