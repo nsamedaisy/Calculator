@@ -1,34 +1,40 @@
 const display = document.getElementById('display')
 let equation = ''
-let isOperatorClicked = false
+let lastInputWasOperator = false
 
-function appendValue(value) {
+function appendValue (value) {
   equation += value
   display.value = equation
-  isOperatorClicked = false
+  lastInputWasOperator = false
 }
 
-function appendOperator(operator) {
-  equation += operator
-  isOperatorClicked = true
+function appendOperator (operator) {
+  if (!lastInputWasOperator) {
+    equation += operator
+    display.value = equation
+    lastInputWasOperator = true
+  }
 }
 
-function clearDisplay() {
+function clearDisplay () {
   equation = ''
   display.value = ''
+  lastInputWasOperator = false
 }
 
-function deleteLastCharacter() {
+function deleteLastCharacter () {
   equation = equation.slice(0, -1)
   display.value = equation
+  lastInputWasOperator = (equation.slice(-1) in {'+': true, '-': true, '*': true, '/': true})
 }
 
-function CalculateResult() {
+function calculateResult () {
   try {
     equation = equation.replace(/%/g, '*0.01')
-    let result = eval(equation)
-    equation = result.toString()
+    const result = eval(equation)
+    equation = result.toString ()
     display.value = equation
+    lastInputWasOperator = false
   } catch (err) {
     display.value = 'Error'
   }
