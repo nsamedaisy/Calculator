@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(45deg, #e5771d, #5a818a, #5b5b8d);
+  background-size: 400% 400%;
+  animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.calculator {
+  margin: 101px auto;
+  width: 320px;
+  text-align: center;
+  border: #fff solid 2px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px;
+  border-style: outset;
+  outline: 0.2rem outset black;
+}
+
+#display {
+  margin-top: 80px;
+  width: 80%;
+  height: 100%;
+  font-size: 24px;
+  background-color: black;
+  text-align: right;
+  padding: 35px;
+  margin-bottom: 15px;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+
+.buttons button {
+  width: 65px;
+  height: 65px;
+  font-size: 22px;
+  margin: 5px;
+  background-color: #616161;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+  font-weight: 900;
+}
+
+.buttons button:hover {
+  background-color: #adadad;
+  transition: 0.5s ease-in;
+}
+
+button.zero {
+  width: 140px;
+  border-radius: 12px;
+}
+
+button.symbol {
+  background-color: #aaa;
+  color: black;
+}
+
+button.symbol-right {
+  background-color: #c78100;
+}
+
+button.symbol-right:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s ease-in;
+}
